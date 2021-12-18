@@ -6,38 +6,76 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Ajax PHP CRUD System">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ajax PHP CRUD</title>
+	<title>Planilla</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 </head>
 <body style="font-family:roboto,sans-serif;">
-	<div class="container-fluid py-4" style="background:linear-gradient(to right, rgb(111, 207, 242), rgb(4, 147, 135));">
-		<h1 class='text-center'>Ajax-PHP CRUD System</h1>
-		<p class='text-center'>Ajax PHP Live CREATE, READ, UPDATE, DELETE system with live predictive Search Bar</p>
-	</div>
-	<br>
-<div class="container col-md-4">
+
+	
+<div class="container">
 	<div class="container py-3" id='editBox' style="background:#e4e4e417;">
-			<h2 class='text-center'>Edit Data</h2><br>
+			<h2 class='text-center'>Editar Datos</h2><br>
 		<div id='msgEdit'></div>
 			<form action="" id='editForm' method="post">
-				<div class="form-group">
-					<input type="text" id="upd_first" name="upd_first" placeholder="First Name" class='form-control' required>
+				<div class="row">
+				<div class="col-md-6">
+			    <div class="form-group">
+					<label>Id Pago</label>
+					<input type="text" id="upd_id_pago" name="upd_id_pago"  class='form-control' required>
 				</div>
 				<div class="form-group">
-					<input type="text" id="upd_last" name="upd_last" placeholder="Last Name" class='form-control' required>
+					<label>Id Empleado</label>
+					<input type="text" id="upd_id_empleado" name="upd_id_empleado"  class='form-control' required>
 				</div>
 				<div class="form-group">
-					<input type="text" id="upd_work" name="upd_work" placeholder="Occupation" class='form-control' required>
+					<label>Fecha</label>
+					<input type="text" id="upd_fecha" name="upd_fecha"  class='form-control' required>
 				</div>
 				<div class="form-group">
-					<input type="text" id="upd_city" name="upd_city" placeholder="City" class='form-control' required>
+					<label>Dia</label>
+					<input type="number" id="upd_dia" name="upd_dia"  class='form-control' required>
 				</div>
 				<div class="form-group">
-					<input type="text" id="upd_email" name="upd_email" placeholder="Email" class='form-control' required>
+					<label>Hora</label>
+					<input type="number" id="upd_hora" name="upd_hora"  class='form-control' required>
 				</div>
+				<div class="form-group">
+					<label>Hora extra doble</label>
+					<input type="number" id="upd_hora_doble" name="upd_hora_doble" class='form-control' required>
+				</div>
+			</div>
+				
+			<div class="col-md-6">		
+				<div class="form-group">
+					<label>Tutoreo</label>
+					<input type="text" id="upd_tutoreo" name="upd_tutoreo"  class='form-control' required>
+				</div>
+				<div class="form-group">
+					<label>Raleo</label>
+					<input type="text" id="upd_raleo" name="upd_raleo"  class='form-control' required>
+				</div>
+				<div class="form-group">
+					<label>Bajar Planta</label>
+					<input type="text" id="upd_bajar_planta" name="upd_bajar_planta"  class='form-control' required>
+				</div>
+				<div class="form-group">
+					<label>Deshoje</label>
+					<input type="text" id="upd_deshoje" name="upd_deshoje"  class='form-control' required>
+				</div>
+				<div class="form-group">
+					<label>Cosecha</label>
+					<input type="text" id="upd_cosecha" name="upd_cosecha"  class='form-control' required>
+				</div>
+				<div class="form-group">
+					<label>Inversion</label>
+					<input type="text" id="upd_inv" name="upd_inv"  class='form-control' required>
+				</div>
+			</div>
+				</div>
+	
 				<center>
 				<input type="submit" value="Update" class='btn update btn-success '>
-				<a href="index.php#first" class='btn btn-danger'>Cancel</a>
+				<a href="index.php#first" class='btn btn-danger'>Cancelar</a>
 				</center>
 			</form>
 			<br>
