@@ -32,6 +32,9 @@
       <input type="checkbox" name="check" id="check8" value="1" onchange="javascript:showContent8()">  Cosecha $
     </form>
 	<br>
+	<a href='add.php' class='edit btn btn-sm btn-primary' title='edit'>Agregar nuevo registro</a>
+	<br>
+	<br>
 			<div id="table"></div>
 		</div>
 		

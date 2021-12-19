@@ -94,7 +94,8 @@ class user extends db {
 		$stmt = $this->connect()->prepare($query);
 		
 		if($stmt->execute([$id_empleado,$fecha,$dia,$hora,$hora_doble,$tutoreo,$raleo,$bajar_planta,$deshoje,$cosecha,$inv,$id_pago])){
-			echo "Datos actualizados! <a href='index.php'>Volver al listado</a>";
+		
+			echo "Datos actualizados!";
 		}
 	}
 	//user search results

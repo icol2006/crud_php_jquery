@@ -13,7 +13,10 @@
 
 	
 <div class="container">
+
 	<div class="container py-3" id='editBox' style="background:#e4e4e417;">
+	<a href='index.php' style='float: right;font-size: larger;'>Volver al listado</a>
+	<br><br>
 			<h2 class='text-center'>Editar Datos</h2><br>
 		<div id='msgEdit'></div>
 			<form action="" id='editForm' method="post">
@@ -21,7 +24,7 @@
 				<div class="col-md-6">
 			    <div class="form-group">
 					<label>Id Pago</label>
-					<input type="text" id="upd_id_pago" name="upd_id_pago"  class='form-control' required>
+					<input type="text" id="upd_id_pago" name="upd_id_pago"  class='form-control' required disabled>
 				</div>
 				<div class="form-group">
 					<label>Id Empleado</label>
@@ -29,7 +32,7 @@
 				</div>
 				<div class="form-group">
 					<label>Fecha</label>
-					<input type="text" id="upd_fecha" name="upd_fecha"  class='form-control' required>
+					<input type="date" id="upd_fecha" name="upd_fecha"  class='form-control' required>
 				</div>
 				<div class="form-group">
 					<label>Dia</label>
@@ -74,7 +77,7 @@
 				</div>
 	
 				<center>
-				<input type="submit" value="Update" class='btn update btn-success '>
+				<input type="submit" value="Actualizar" class='btn update btn-success '>
 				<a href="index.php#first" class='btn btn-danger'>Cancelar</a>
 				</center>
 			</form>

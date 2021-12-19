@@ -54,21 +54,22 @@ $(document).ready(function(){
 		})
 		.done(function(data){
 			console.log(data);
-		$("#upd_id_pago").val('');
-		$("#upd_id_empleado").val('');
-		$("#upd_fecha").val('');
-		$("#upd_dia").val('');
-		$("#upd_hora").val('');
-		$("#upd_hora_doble").val('');
-		$("#upd_tutoreo").val('');
-		$("#upd_raleo").val('');
-		$("#upd_bajar_planta").val('');
-		$("#upd_deshoje").val('');
-		$("#upd_cosecha").val('');
-		$("#upd_inv").val('');
+		// $("#upd_id_pago").val('');
+		// $("#upd_id_empleado").val('');
+		// $("#upd_fecha").val('');
+		// $("#upd_dia").val('');
+		// $("#upd_hora").val('');
+		// $("#upd_hora_doble").val('');
+		// $("#upd_tutoreo").val('');
+		// $("#upd_raleo").val('');
+		// $("#upd_bajar_planta").val('');
+		// $("#upd_deshoje").val('');
+		// $("#upd_cosecha").val('');
+		// $("#upd_inv").val('');
 			$("#table").load("includes/load.php");
 			$("#msgEdit").html("<p class='text-center alert alert-success'>"+data+"</p>");
 			$("#msgEdit").slideDown(1000);
+			$('#msgEdit').delay(1000).fadeOut();
 		});
  });
 });	
